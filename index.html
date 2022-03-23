@@ -1,80 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRUD</title>
     <!--Boostswatch -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-</head>
- 
-<body>
- 
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+
+  <body>
     <!-- Navegacion -->
-    <nav class="navbar navbar-dar bg-dark">
-        <a href="navbar-brand" class="#">Productos</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Productos</a>
+        <a href="#" class="navbar-brand">Productos app</a>
+      </div>
     </nav>
- 
-    <!-- Navegacion -->
-    <nav class="navbar navbar-dar bg-dark">
-        <a href="navbar-brand" class="#">Productos app</a>
-    </nav>
- 
-    <div class="contenedor">
-        <!-- Aplicacion -->
-        <div class="columna medida_columna">
- 
-            <!-- Formulario -->
-            <div class="medida-1">
- 
-                <div class="tarjeta">
- 
-                    <div class="tarjeta-header">
- 
-                        <h4>Agregar Producto</h4>
- 
-                    </div>
-                    <form class="tarjet-body" action="" id="producto-formulario">
-                        <div class="grupo-formulario">
- 
-                            <input type="text" id="nombre" placeholder="Nombre del producto" class="Control-formulario">
- 
-                        </div>
-                        <div class="grupo-formulario">
- 
-                            <input type="number" id="precio" step="0.01" placeholder="Precio del producto"
-                                class="Control-formulario">
- 
-                        </div>
- 
-                        <div class="grupo-formulario">
- 
-                            <input type="number" id="año" step="1" value="2022" class="Control-formulario">
- 
-                        </div>
- 
-                        <input type="submit" value="Guardar" class="btn btn-primario btn-bloque">
- 
-                    </form>
-                </div>
- 
+
+    <div class="contenedor p-4 col align-self-center">
+      <!-- Aplicacion -->
+      <div class="columna medida_columna col-4">
+        <!-- Formulario -->
+        <div class="medida-1">
+          <div class="tarjeta">
+            <div class="tarjeta-header p-2">
+              <h4>Agregar Producto</h4>
             </div>
- 
-            <div id="producto-lista" class="medida-3">
- 
- 
- 
-            </div>
- 
+            <form class="tarjet-body" action="" id="producto-formulario">
+              <div class="grupo-formulario d-flex">
+                <input
+                  type="text"
+                  id="nombre"
+                  placeholder="Nombre del producto"
+                  class="control-formulario p-2 m-2 shadow border flex-fill"
+                />
+              </div>
+              <div class="grupo-formulario d-flex">
+                <input
+                  type="number"
+                  id="precio"
+                  step="0.01"
+                  placeholder="Precio del producto"
+                  class="control-formulario p-2 m-2 shadow border flex-fill"
+                />
+              </div>
+
+              <div class="grupo-formulario d-flex">
+                <input
+                  type="number"
+                  id="año"
+                  step="1"
+                  value="2022"
+                  class="control-formulario p-2 m-2 shadow border flex-fill"
+                />
+              </div>
+
+              <input
+                type="submit"
+                value="Guardar"
+                class="btn btn-primary btn-bloque m-2 shadow col-4"
+              />
+            </form>
+          </div>
         </div>
- 
+
+        <div id="producto-lista" class="medida-3"></div>
+      </div>
     </div>
- 
+
     <script src="app.js" type="module"></script>
-</body>
- 
-</html>  
-
-
+  </body>
+</html>
