@@ -90,6 +90,13 @@ class UI {
 
             const contenido = document.querySelector(".container");
             const app = document.querySelector("#App");
+
+            // Insertar mensaje en el interfaz usuario
+            container.insertBefore(div, app);
+
+            setTimeout(function(){
+                document.querySelector(".alert").remove();
+            }, 3000);
         }
     
 }
